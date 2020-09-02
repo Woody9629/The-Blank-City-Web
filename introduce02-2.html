@@ -1,0 +1,24 @@
+<style>
+  .box2 {
+  text-align:center;
+  margin:0px;
+  color: white;
+  }
+</style>
+<h1 class="box2" style="padding-top:200px; text-decoration:underline;"><a onclick="
+  fetch('introduce02-0.html').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#youtube').innerHTML = text;
+    })
+  })">Film Blank</a></h1>
+<p>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/8WA5Xal-BYY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  style="padding-left:480px;"
+></iframe>
+<h3 class="box2" style="text-decoration:underline;" onclick="
+  fetch('introduce02-1.html').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#youtube').innerHTML = text;
+    })
+  })
+">〈〈 Back Page </h3>

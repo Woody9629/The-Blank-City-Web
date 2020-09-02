@@ -1,0 +1,26 @@
+<style>
+  .box1 {
+  text-align:center;
+  margin:0px;
+  }
+</style>
+<h1 class="box1" style="padding-top:380px; text-decoration:underline;"><a onclick="
+  fetch('introduce01-0.html').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#wib').innerHTML = text;
+    })
+  })">Blank</a></h1>
+<p>
+  <h2 class="box1">
+    Blank can be filled with evetything,<br>
+    there is no limt in this square box.
+  </h2>
+<p><br>
+  <h3 class="box1" style="text-decoration:underline">
+    <a onclick="
+      fetch('introduce01-2.html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('#wib').innerHTML = text;
+        })
+      })
+    ">View in video >></a><h3>

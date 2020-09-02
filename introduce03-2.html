@@ -1,0 +1,22 @@
+<style>
+  .box3 {
+  text-align:center;
+  margin:0px;
+  color: white;
+  }
+</style>
+<h1 class="box3" style="padding-top:200px; text-decoration:underline;"><a onclick="
+  fetch('introduce03-0.html').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#gub').innerHTML = text;
+    })
+  })">Get Your Blank</a></h1>
+<p>
+
+<h3 class="box3" style="text-decoration:underline;" onclick="
+  fetch('introduce03-1.html').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#gub').innerHTML = text;
+    })
+  })
+">〈〈 Back Page </h3>

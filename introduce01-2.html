@@ -1,0 +1,24 @@
+<style>
+  .box1 {
+  text-align:center;
+  margin:0px;
+  }
+</style>
+<h1 class="box1" style="padding-top:200px; text-decoration:underline;"><a onclick="
+  fetch('introduce01-0.html').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#wib').innerHTML = text;
+    })
+  })">Blank</a></h1>
+<p>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/n5vNnTzcwI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  style="padding-left:480px;"
+></iframe>
+<p>
+<h3 class="box1" style="text-decoration:underline;" onclick="
+  fetch('introduce01-1.html').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#wib').innerHTML = text;
+    })
+  })
+">〈〈 Back Page </h3>

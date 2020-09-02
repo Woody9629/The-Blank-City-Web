@@ -1,0 +1,31 @@
+<style>
+  .box3 {
+  text-align:center;
+  margin:0px;
+  color:white;
+  }
+</style>
+<h1 class="box3" style="padding-top:380px; text-decoration:underline;"><a onclick="
+  fetch('introduce03-0.html').then(function(response){
+    response.text().then(function(text){
+      document.querySelector('#gub').innerHTML = text;
+    })
+  })">Get Your Blank</a></h1>
+<p>
+  <h2 class="box3">
+    Have your own goods made of your blanks!
+    <p>
+    You can customize goods whatever you want.<br>
+    Whether it's a notebook, tape, case or anything else,<br>
+    you can customize it to your liking.<br>
+
+  </h2>
+<p><br>
+  <h3 class="box3" style="text-decoration:underline">
+    <a onclick="
+      fetch('introduce03-2.html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('#gub').innerHTML = text;
+        })
+      })
+    ">Take a look Blanks made by others >></a><h3>

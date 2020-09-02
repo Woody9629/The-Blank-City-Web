@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Blank City</title>
+  <style>
+    .first {
+      text-align: center;
+      font-size: 50px;
+      padding-top:430px;
+      margin:0px;
+    }
+    .category {
+      width:1760px;
+      height:990px;
+      margin:auto;
+    }
+  </style>
+</head>
+<body style="margin:0px;">
+  <div id="wib" class="category" style="background-color:lightsteelblue; margin-bottom:5px;">
+    <h1 class="first" style="color:white;"> WIB: What is "
+      <a onclick="
+      fetch('introduce01-1.html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('#wib').innerHTML = text;
+        })
+      })"
+      style="color:black;text-decoration:underline;">Blank</a>?"</h1>
+  </div>
+  <div id="youtube" class="category" style="background-color:indianred; margin-bottom:5px;">
+    <h1 class="first" style="color:white;">Youtube:
+      <a onclick="
+        fetch('introduce02-1.html').then(function(response){
+          response.text().then(function(text){
+            document.querySelector('#youtube').innerHTML = text;
+          })
+        })
+      " style="text-decoration:underline;">Film Blank</a></h1>
+  </div>
+  <div id="gub" class="category" style="background-color:slategray; margin-bottom:5px;">
+    <h1 class="first" style="color:white;">GUB:
+      <a onclick="
+        fetch('introduce03-1.html').then(function(response){
+          response.text().then(function(text){
+            document.querySelector('#gub').innerHTML = text;
+          })
+        })
+      " style="text-decoration:underline;">Get Your Blank</a></h1>
+    </div>
+</body>
+</html>
